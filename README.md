@@ -1,5 +1,5 @@
 [![Deploy Eleventy to XMIT](https://github.com/adamdjbrett/adjb-tildeverse/actions/workflows/xmit-deploy.yml/badge.svg)](https://github.com/adamdjbrett/adjb-tildeverse/actions/workflows/xmit-deploy.yml)
-# -adjb
+# ~adjb
 tildeverse terminal theme
 - [term.adjb.lol](https://term.adjb.lol)
 - [deploy to xmit](https://xmit.co)
