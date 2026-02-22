@@ -2,7 +2,6 @@
 # ~adjb
 tildeverse terminal theme
 - [term.adjb.lol](https://term.adjb.lol)
-- [deploy to xmit](https://xmit.co)
-
-## built using terminal css
-Made using terminal.css by [panr](https://radoslawkoziel.pl/). Derived from [Terminal](https://github.com/panr/hugo-theme-terminal) theme.
+- [deployed to xmit](https://xmit.co)
+- Built with terminal.css by [panr](https://radoslawkoziel.pl/).
+- Derived from [Terminal](https://github.com/panr/hugo-theme-terminal) theme.
