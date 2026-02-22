@@ -1,0 +1,45 @@
+---
+permalink: /humans.txt
+eleventyExcludeFromCollections: true
+---
+/* TEAM */
+Human: Adam DJ Brett
+Site: {{ site.url }}
+
+/* GITHUB AUTHORS + CONTRIBUTORS */
+{% if contributors.authorsAndContributors.length -%}
+{% for person in contributors.authorsAndContributors -%}
+Author/Contributor: {{ person | safe }}
+{% endfor -%}
+{% else %}
+Author/Contributor: none listed
+{% endif -%}
+
+/* CO-AUTHORS */
+{% if contributors.coAuthors.length -%}
+{% for person in contributors.coAuthors -%}
+Co-author: {{ person | safe }}
+{% endfor -%}
+{% else %}
+Co-author: none listed
+{% endif -%}
+
+/* ALL GITHUB PEOPLE */
+{% if contributors.all.length -%}
+{% for person in contributors.all -%}
+Person: {{ person | safe }}
+{% endfor -%}
+{% else %}
+Person: none listed
+{% endif -%}
+
+/* THANKS */
+Terminal CSS by panr
+based on the hugo theme terminal
+https://github.com/panr/hugo-theme-terminal
+
+/* SITE */
+Standards: HTML5, CSS3
+Framework: Eleventy {{ build.eleventyVersion }} + Nunjucks + Luxon
+Created: {{ build.createdAt | ymd }}
+Deployed: {{ build.deployedAt | ymd }}

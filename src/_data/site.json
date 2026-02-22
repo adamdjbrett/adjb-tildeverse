@@ -1,0 +1,28 @@
+{
+  "title": "Adam DJ Brett",
+  "description": "One-page landing site for Adam DJ Brett. A vintage tilde style page ~adjb.",
+  "url": "https://adamdjbrett.com",
+  "author": "Adam DJ Brett",
+  "contact": {
+    "name": "Adam DJ Brett",
+    "jobTitle": "Web Developer",
+    "telephone": "+1-817-760-0292",
+    "email": "info@adamdjbrett.com",
+    "address": {
+      "streetAddress": "6339 Charlotte Pike #532 - Virtual",
+      "addressLocality": "Nashville",
+      "addressRegion": "TN",
+      "postalCode": "37209",
+      "addressCountry": "US"
+    },
+    "photo": "https://adamdjbrett.com/assets/img/adam-dj-brett-sq-sm-min.webp",
+    "sameAs": [
+      "https://adamdjbrett.com",
+      "https://adamdj.tel",
+      "https://adjb.lol",
+      "https://www.linkedin.com/in/adamdjbrett",
+      "https://github.com/adamdjbrett",
+      "https://hcommons.social/@adjb"
+    ]
+  }
+}

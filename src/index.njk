@@ -1,0 +1,100 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="canonical" href="{{ site.url }}/" />
+    <meta name="theme-color" content="#fffbf7" />
+    <meta name="color-scheme" content="light" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:image" content="{{ '/og-image.png' | absoluteUrl(site.url) }}" />
+    <meta property="og:image:alt" content="Terminal style graphic for Adam DJ Brett" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+    <meta name="twitter:image" content="{{ '/og-image.png' | absoluteUrl(site.url) }}" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ site.contact.name }}",
+        "jobTitle": "{{ site.contact.jobTitle }}",
+        "telephone": "{{ site.contact.telephone }}",
+        "email": "{{ site.contact.email }}",
+        "url": "{{ site.url }}",
+        "sameAs": [{% for profile in site.contact.sameAs %}"{{ profile }}"{% if not loop.last %}, {% endif %}{% endfor %}],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "{{ site.contact.address.streetAddress }}",
+          "addressLocality": "{{ site.contact.address.addressLocality }}",
+          "addressRegion": "{{ site.contact.address.addressRegion }}",
+          "postalCode": "{{ site.contact.address.postalCode }}",
+          "addressCountry": "{{ site.contact.address.addressCountry }}"
+        }
+      }
+    </script>
+
+    <link rel="icon" href="/favicon.png" />
+    {% inlineCss "src/assets/css/terminal.min.css" | safe %}
+  </head>
+  <body class="terminal">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="intro">
+      <h1>{{ site.title }}</h1>
+      <p>Adam DJ Brett is an educator, researcher, and web developer—Operations Manager with the American Indian Law Alliance—decoding religion through digital humanities and critical Indigenous studies (PhD in Religion, Syracuse University).</p>
+    </header>
+
+    <main id="main">
+      <section>
+        <h2>Connect with Me</h2>
+        <nav class="links" aria-label="Primary links">
+          <a href="https://adamdjbrett.com" rel="me">Official website</a>
+          <a href="https://github.com/adamdjbrett" rel="me">GitHub profile</a>
+          <a href="https://hcommons.social/@adjb" rel="me">Mastodon profile</a>
+          <a href="https://adjb.lol" rel="me">my omg.lol community site</a>
+          <a href="https://adamdjbrett.com/connect/">Links</a>
+          <a href="https://www.adjb.lol/now">now</a>
+          <a href="https://adjb.status.lol/">status</a>
+          <a href="https://adjb.proven.lol/">proven</a>
+          <a href="https://home.omg.lol/referred-by/adjb">Powered by omg.lol</a>
+        </nav>
+      </section>
+
+      <div class="h-card" style="display: none;">
+        <span class="p-name">{{ site.contact.name }}</span>
+        <span class="p-job-title">{{ site.contact.jobTitle }}</span>
+        <img
+          class="u-photo"
+          src="{{ site.contact.photo }}"
+          alt="Portrait of {{ site.contact.name }}"
+          width="96"
+          height="96"
+          loading="lazy"
+        />
+        <a class="u-url" href="{{ site.url }}" rel="me">Website</a>
+        <a class="u-email" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+        <a class="p-tel" href="tel:+18177600292">{{ site.contact.telephone }}</a>
+        <span class="p-adr h-adr">
+          <span class="p-street-address">{{ site.contact.address.streetAddress }}</span>
+          <span class="p-locality">{{ site.contact.address.addressLocality }}</span>
+          <abbr class="p-region" title="Tennessee">{{ site.contact.address.addressRegion }}</abbr>
+          <span class="p-postal-code">{{ site.contact.address.postalCode }}</span>
+          <span class="p-country-name">{{ site.contact.address.addressCountry }}</span>
+        </span>
+      </div>
+    </main>
+
+    <footer>
+      Made using terminal.css by <a href="https://radoslawkoziel.pl/">panr</a>. Derived from <a href="https://github.com/panr/hugo-theme-terminal">Terminal</a> theme. Source code on <a href="https://github.com/panr/terminal-css/">Github</a>. Built here for nostalgic reasons by <a href="https://adamdjbrett.com">Adam DJ Brett</a>. Built with <a href="https://11ty.dev">11ty</a> v{{ build.eleventyVersion }}. Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons CC-BY-SA</a> {{ build.deployedAt | ymd }}.
+    </footer>
+  </body>
+</html>

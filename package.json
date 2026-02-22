@@ -1,0 +1,25 @@
+{
+  "name": "~adjb",
+  "version": "1.0.0",
+  "description": "One-page landing site for Adam DJ Brett",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "lightningcss src/assets/css/terminal.css --minify --output-file src/assets/css/terminal.min.css",
+    "build": "npm run build:css && eleventy",
+    "start": "npm run build:css && eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@11ty/eleventy": "4.0.0-alpha.6",
+    "luxon": "3.7.2",
+    "nunjucks": "3.2.4",
+    "terminal.css": "0.7.5"
+  },
+  "devDependencies": {
+    "lightningcss-cli": "1.31.1"
+  }
+}
