@@ -3,5 +3,5 @@
 tildeverse terminal theme
 - [term.adjb.lol](https://term.adjb.lol)
 - [deployed to xmit](https://xmit.co)
-- Built with terminal.css by [panr](https://radoslawkoziel.pl/).
+- Built with [terminal.css](https://github.com/panr/terminal-css) by [panr](https://radoslawkoziel.pl/).
 - Derived from [Terminal](https://github.com/panr/hugo-theme-terminal) theme.
